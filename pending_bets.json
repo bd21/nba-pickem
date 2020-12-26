@@ -1,0 +1,8 @@
+{
+  "bets": [ 
+    {"team1" : "warriors", "team2" : "spurs"},
+    {"team1" : "celtics", "team2" : "kings"},
+    {"team1" : "mavs", "team2" : "76ers"},
+    {"team1" : "nets", "team2" : "lakers"}
+  ]
+}
