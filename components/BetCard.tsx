@@ -6,7 +6,7 @@ import Colors from '../constants/Colors';
 import { MonoText } from './StyledText';
 import { Text, View } from './Themed';
 
-import { ListItem, Avatar } from 'react-native-elements'
+import { ListItem, Avatar, ButtonGroup } from 'react-native-elements'
 
 const list = [
   {
@@ -14,9 +14,8 @@ const list = [
     team_2: 'Celtics'
   },
   {
-    team1: 'Kings',
-    avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-    subtitle: 'Vice Chairman'
+    team_1: 'Kings',
+    team_2: 'Mavericks'
   },
 ];
 
@@ -39,8 +38,9 @@ export default function EditScreenInfo({ path }: { path: string }) {
             <ListItem key={i} bottomDivider>
               <Avatar source={{uri: l.avatar_url}} />
               <ListItem.Content>
-                <ListItem.Title>{l.name}</ListItem.Title>
-                <ListItem.Subtitle>{l.subtitle}</ListItem.Subtitle>
+                
+                <ListItem.Title>{l.team_1}</ListItem.Title>
+                <ListItem.Subtitle>{l.team_2}</ListItem.Subtitle>
               </ListItem.Content>
             </ListItem>
           ))
